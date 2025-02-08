@@ -20,7 +20,7 @@ class Test extends TestCase
         ];
 
         $this->assertEquals(['doc2', 'doc1'], search($docs, 'shoot'));
-        $this->assertEquals(['doc2', 'doc1'],search($docs, 'shoot!!'));
+        $this->assertEquals(['doc2', 'doc1'], search($docs, 'shoot!!'));
         $this->assertEquals([], search($docs, 'Duck'));
     }
 }

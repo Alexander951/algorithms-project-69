@@ -13,7 +13,6 @@ function buildIndex($docs, $q)
     $tokQ = tokenize($q);
     foreach ($docs as $doc) {
         $count = array_count_values(tokenize($doc['text']));
-        
         foreach ($tokQ as $token) {
             if (isset($count[$token]) && isset($index[$doc['id']])) {
                 $index[$doc['id']] += $count[$token];

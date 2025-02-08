@@ -25,7 +25,7 @@
     }
   },
   "require": {
-    "php": "<8.2",
+    "php": ">=8.1.0 <8.2.0",
     "illuminate/collections": "^11.0",
     "nesbot/carbon": "^3.0",
     "symfony/string": "^7.0",

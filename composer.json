@@ -1,7 +1,7 @@
 {
   "name": "hexlet/php-package",
   "bin": ["bin/php-package"],
-  "type": "library",
+  "type": "project",
   "authors": [
     {
       "name": "T",
@@ -40,8 +40,12 @@
     "squizlabs/php_codesniffer": "*"
   },
   "config": {
-    "allow-plugins": {
-      "phpstan/extension-installer": true
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
-  }
 }
